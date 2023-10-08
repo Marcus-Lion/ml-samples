@@ -10,7 +10,7 @@ py -m pip install --upgrade build
 py -m build
 ````
 
-# ml_py_lib Test
+# marcuslion-pylib Test
 
 ````
 py -m twine upload --repository testpypi -u __token__ --skip-existing dist/*
@@ -21,5 +21,5 @@ pypi-AgENdGVzdC5weXBpLm9yZwIkYmZlMGNiODctNjkxNi00NDRiLWE5NjAtM2Y0ZjdjZmExOGJkAAI
 ````
 
 ````
-pip install -i https://test.pypi.org/simple/ ml-py-lib --upgrade
+pip install -i https://test.pypi.org/simple/ marcuslion-pylib --upgrade
 ````

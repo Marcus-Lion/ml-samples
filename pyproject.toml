@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "ml-py-lib"
+name = "marcuslion-pylib"
 version = "0.1.0"
 authors = [
   { name="Marc", email="support@marcuslion.com" },
