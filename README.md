@@ -23,6 +23,6 @@ py -m twine upload -u __token__ --skip-existing dist/*
 
 # Local Install 
 ````
-pip install -i https://test.pypi.org/simple/ py-ml-lib --upgrade
+pip install -i https://test.pypi.org/simple/ marcuslion --upgrade
 ````
 
