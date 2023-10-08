@@ -12,16 +12,17 @@ py -m build
 ````
 
 # py-ml-lib Test
-
 ````
 py -m twine upload --repository testpypi -u __token__ --skip-existing dist/*
-````
-
-````
-pip install -i https://test.pypi.org/simple/ py-ml-lib --upgrade
 ````
 
 # Release
 ````
 py -m twine upload -u __token__ --skip-existing dist/*
 ````
+
+# Local Install 
+````
+pip install -i https://test.pypi.org/simple/ py-ml-lib --upgrade
+````
+
