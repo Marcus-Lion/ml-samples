@@ -11,7 +11,7 @@ py -m pip install --upgrade build
 py -m build
 ````
 
-# py-ml-lib Test
+# marcuslion Test
 ````
 py -m twine upload --repository testpypi -u __token__ --skip-existing dist/*
 ````
@@ -24,5 +24,6 @@ py -m twine upload -u __token__ --skip-existing dist/*
 # Local Install 
 ````
 pip install -i https://test.pypi.org/simple/ marcuslion --upgrade
+pip install -i https://pypi.org/simple/ marcuslion --upgrade
 ````
 
