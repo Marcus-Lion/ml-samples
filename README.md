@@ -21,5 +21,5 @@ pypi-AgENdGVzdC5weXBpLm9yZwIkYmZlMGNiODctNjkxNi00NDRiLWE5NjAtM2Y0ZjdjZmExOGJkAAI
 ````
 
 ````
-pip install -i https://test.pypi.org/simple/ marcuslion-pylib --upgrade
+pip install -i https://test.pypi.org/simple/ ml-py-lib --upgrade
 ````
