@@ -12,7 +12,7 @@ py -m build
 # ml-py-lib Test
 
 ````
-py -m twine upload --repository testpypi -u __token__ dist/*
+py -m twine upload --repository testpypi -u __token__ --skip_existing dist/*
 ````
 
 ````
