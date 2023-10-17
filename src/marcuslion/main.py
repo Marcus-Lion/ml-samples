@@ -20,11 +20,11 @@ def ml_help():
     print(" .openml() or .add_one()")
 
 
-def ml_search(key):
+def ml_search(key, providers):
     # $ curl 'https://qa1.marcuslion.com/core/datasets/search?providers=kaggle,usgov&title=bike'
     baseUrl = "https://qa1.marcuslion.com"
     url = 'core/datasets/search'
-    baseParams = "providers=kaggle,usgov&title=" + key
+    baseParams = "providers="+providers+"&title=" + key
     fullUrl = baseUrl + "/" + url + "?" + baseParams
 
     logger.info(fullUrl)

@@ -4,7 +4,7 @@ from src.marcuslion.main import ml_search
 
 if __name__ == '__main__':
     try:
-        df = ml_search("bike")
+        df = ml_search("bike", "kaggle,usgov")
         print(df.head(3))
         print(df.tail(3))
 
