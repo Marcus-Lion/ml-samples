@@ -12,7 +12,7 @@ def ml_addone(number):
 
 
 def ml_help():
-    logger.info(" .openml() or .add_one()")
+    logger.info(" .ml_search() or .add_one()")
 
 
 def ml_search(key, providers):
