@@ -1,4 +1,3 @@
-import webbrowser
 import urllib3
 import pandas as pd
 import ssl
@@ -7,17 +6,13 @@ import logging
 
 logger = logging.getLogger()
 
-def ml_open():
-    url = "https://qa-marcuslion.web.app/"
-    webbrowser.open(url)
-
 
 def ml_addone(number):
     return number + 1
 
 
 def ml_help():
-    print(" .openml() or .add_one()")
+    logger.info(" .openml() or .add_one()")
 
 
 def ml_search(key, providers):

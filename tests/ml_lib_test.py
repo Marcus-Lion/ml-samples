@@ -1,6 +1,5 @@
-import pandas as pd
 
-from src.marcuslion.main import ml_search
+from src.marcuslion.marcuslion import ml_search
 
 if __name__ == '__main__':
     try:
