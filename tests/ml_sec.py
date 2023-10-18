@@ -16,7 +16,7 @@ logger = logging.getLogger('ml_py')
 logger.setLevel(logging.DEBUG)
 logger.addHandler(logging.StreamHandler())
 
-# mongosh -u nick -p k1pGS1obiEy5BCXA mongodb+srv://nick:k1pGS1obiEy5BCXA@cluster0.5346qcs.mongodb.net/SEC
+# mongosh -u nick -p <pswd> mongodb+srv://nick:<pswd>>@cluster0.5346qcs.mongodb.net/SEC
 user = 'nick'
 pswd = 'k1pGS1obiEy5BCXA'
 CONNECTION_STRING = 'mongodb+srv://' + user + ':' + pswd + '@cluster0.5346qcs.mongodb.net/SEC'
