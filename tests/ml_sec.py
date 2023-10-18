@@ -1,29 +1,13 @@
-import sys
 import logging
-import importlib
-import urllib3
-import ssl
 import pandas as pd
-import io
-import json
-
-from bson import SON
+from dotenv import load_dotenv
+import os
 from pymongo import MongoClient
 import certifi
-from bson.json_util import dumps
 
 logger = logging.getLogger('ml_py')
 logger.setLevel(logging.DEBUG)
 logger.addHandler(logging.StreamHandler())
-
-# mongosh -u nick -p <pswd> mongodb+srv://nick:<pswd>>@cluster0.5346qcs.mongodb.net/SEC
-user = 'nick'
-pswd = 'k1pGS1obiEy5BCXA'
-CONNECTION_STRING = 'mongodb+srv://' + user + ':' + pswd + '@cluster0.5346qcs.mongodb.net/SEC'
-port = 27017
-searchDoc = '10-K'
-searchDate = '2023-10-12'
-
 
 if __name__ == '__main__':
     logger.info('Start marcuslion SEC mongodb')
@@ -31,8 +15,16 @@ if __name__ == '__main__':
     pd.set_option('display.max_columns', 500)
     pd.set_option('display.width', 1000)
 
+    # load user + pswd from .env
+    load_dotenv()
+    user = os.environ.get('MONGODB_USER')
+    pswd = os.environ.get('MONGODB_PASSWORD')
+    # mongosh -u nick -p <pswd> mongodb+srv://nick:<pswd>@cluster0.5346qcs.mongodb.net/SEC
+    port = 27017 #default
+    CONNECTION_STRING = 'mongodb+srv://' + user + ':' + pswd + '@cluster0.5346qcs.mongodb.net/SEC'
+    searchDoc = '10-K'
+    searchDate = '2023-10-12'
     client = MongoClient(CONNECTION_STRING, tlsCAFile=certifi.where())
-    #db = client['company-facts']
 
     # Getting the database instance
     db = client['SEC']
