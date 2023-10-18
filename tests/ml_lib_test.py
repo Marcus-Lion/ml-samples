@@ -1,6 +1,4 @@
-
 from marcuslion import ml_search, ml_help
-
 
 if __name__ == '__main__':
     try:
@@ -11,5 +9,4 @@ if __name__ == '__main__':
         print(df.tail(3))
 
     except Exception as e:
-        # print(e, '|', e.errno, '|', e.value, '|', e.args)
         print("Exception ", e)
